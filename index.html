@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><b>Areesha Rehan</b></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Areesha Rehan</div>
+        <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+    </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pi_c.jpeg" alt="John Doe Pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Areesha Rehan</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn-btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn-btn-color-3" onclick="location.href='./#contact'" >Contact Info</button>
+            </div>
+            <div id="socials">
+                <img src="./assets/linkedin.png" alt="linkedin" class="social-icon" onclick="location.href='https://www.linkedin.com/in/areesha-rehan-49975129b/'"/>
+                <img src="./assets/github.png" alt="github" class="social-icon" onclick="location.href='https://github.com/areesha7'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+            <div id="about-me">
+                <p class="about1">Get To Know More</p>
+                <h1 class="about2"><b>About Me</b></h1>
+            </div>
+        <div id="about-section">
+            <div class="about-btn-container">
+                <table>
+                    <td class="exp"><img id="exp_img" src="./assets/experience.png" alt=""/><h1><b>Experience</b></h1><br>
+                    <p>Internship at ProdigyInfotech</p>
+                    </td>
+                    <td class="edu"><img id="exp_img" src="./assets/education.png" alt=""/><h1><b>Education</b></h1><br>
+                        <p>Undergrad Software Engineering at NED University</p>
+                    </td>
+                    <td class="lang"><h1><b>Languages</b></h1>
+                        <ul>
+                            <li>Python (basic)</li>
+                            <li>C++(Intermediate)</li>
+                            <li>HTML CSS and ReactJs</li>
+          </table>
+          <p class="pp1">I am Areesha Rehan, a passionate and dedicated software engineering student currently in my 3rd year at NED University. With a strong foundation in frontend development and a growing interest in backend technologies, I love creating dynamic and user-friendly applications. I have experience working with React, PostgreSQL, JavaScript, and other modern technologies, and I’m always exploring new tools and techniques to expand my skill set. My goal is to build solutions that not only meet technical requirements but also provide intuitive, seamless user experiences. Currently, I am honing my expertise in full-stack development while working on diverse projects, including web applications</p>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <h1 class="skills-head">Skills</h1>
+        <div class="skills-container">
+            <table>
+                <td><h1><img src="./assets/checkmark.png" alt=""/><b>HTML</b></h1>
+                <p>Experienced</p>
+                </td>
+                <td><h1><img src="./assets/checkmark.png" alt=""/><b>CSS</b></h1><br>
+                    <p>Experienced</p>
+                    </td>
+                <td><img src="./assets/checkmark.png" alt=""/><h1><b>JavaScript</b></h1><br>
+                    <p>Basic</p>
+                    </td>
+                <td><img src="./assets/checkmark.png" alt=""/><h1><b>C++</b></h1><br>
+                    <p>Intermediate</p>
+                </td>
+                <td><img src="./assets/checkmark.png" alt=""/><h1><b>React</b></h1><br>
+                    <p>Basic</p>
+                    </td>
+                    <td><img src="./assets/checkmark.png" alt=""/><h1><b>Git</b></h1><br>
+                        <p>Basic</p>
+                        </td>
+            </table>
+            <section id="projects">
+                <p>Browse my </p>
+                <h1><b>Recent Project Below</b></h1>
+                <img src="./assets/arrow.png"/>
+                <br>
+                <button class="project-button" onclick="location.href='https://glowquester-frontend.vercel.app/'"><b>Link</b></button>
+            </section>
+            <section id="contact">
+                <p>Get in touch</p>
+                <h1><b>Contact Me</b></h1>
+                <div class="email-container">
+                <img src="./assets/email.png"/>
+                <a href="mailto:arisharehan7@gmail.com">arisharehan7@gmail.com</a>
+            </div>
+            </section>
+            <p class="copyright">Copyright © 2024 Areesha Rehan. All Rights Reserved.</p>
+        </div>
+    </section>
+    <script src="script.js">
+    </script>
+</body>
+</html>
