@@ -191,40 +191,39 @@ a:hover{
     height: 6vh;
     padding-top: 2%;
 }
-
-#about-me{
-    padding-top: 12%;
+#about-me {
+    padding-top: 12vh; /* Use vh for better responsiveness */
     padding-bottom: 10px;
 }
 
-#about-me p{
+#about-me p {
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 1.25rem; /* Use rem for font-size */
     text-align: center;
 }
 
-#about-me h1{
+#about-me h1 {
     padding-bottom: 20px;
-    font-size: 32px;
+    font-size: 2rem; /* Adjust font size with rem */
     text-align: center;
 }
 
 #about-section {
-    width: 80%; 
-    margin: 0 auto; 
-    text-align: center; 
+    width: 90%; /* Adjust width for better responsiveness */
+    margin: 0 auto;
+    text-align: center;
 }
 
 table {
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 100%;
-    table-layout: fixed; 
+    table-layout: fixed;
 }
 
 td {
     padding: 20px;
-    vertical-align: top; 
-    width: 30%; 
+    vertical-align: top;
+    width: 100%; /* Full width on smaller devices */
 }
 
 #exp_img {
@@ -232,15 +231,15 @@ td {
 }
 
 .exp, .lang, .edu {
-    border: 3px solid black; 
+    border: 3px solid black;
 }
 
 .exp h1, .edu h1, .lang h1 {
-    font-size: 22px;
+    font-size: 1.5rem; /* Adjust font size with rem */
 }
 
 .exp p, .edu p, .lang li {
-    font-size: 16px;
+    font-size: 1rem; /* Adjust font size with rem */
 }
 
 .lang ul {
@@ -251,16 +250,16 @@ td {
 }
 
 .lang li {
-    font-size: 16px;
+    font-size: 1rem; /* Adjust font size with rem */
 }
 
-.pp1{
+.pp1 {
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: justify;
 }
 
-#skill{
+#skill {
     text-align: center;
     align-items: center;
     padding-top: 2%;
@@ -268,8 +267,7 @@ td {
 
 #skill table {
     margin: 0 auto;
-    width: 80%; 
-
+    width: 80%;
 }
 
 #skill table td {
@@ -279,7 +277,7 @@ td {
     background-color: rgb(195, 193, 191);
     justify-content: center;
     align-items: center;
-    padding-top: 3% ;
+    padding-top: 3%;
     border: 2px solid black;
     width: 30%;
     margin: 0 auto;
@@ -287,24 +285,86 @@ td {
 }
 
 #skill table h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-#skill table p{
-    font-size: 20px;
+#skill table p {
+    font-size: 1.25rem;
     padding-left: 10px;
     color: black;
     margin: 0;
-    background-color: rgb(195, 193, 191);;
+    background-color: rgb(195, 193, 191);
 }
 
-#skill table img{
+#skill table img {
     height: 5vh;
-    background-color: rgb(195, 193, 191);;
+    background-color: rgb(195, 193, 191);
 }
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    #about-section, #skill table {
+        width: 90%;
+    }
+
+    td {
+        width: 45%; /* Adjust width for larger screens */
+    }
+
+    #skill table td {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about-section, #skill table {
+        width: 100%;
+    }
+
+    td {
+        width: 100%; /* Full width on tablets */
+    }
+
+    #skill table td {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    #about-me p, #about-me h1 {
+        font-size: 1rem; /* Smaller font for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #about-section, #skill table {
+        width: 100%;
+    }
+
+    td {
+        width: 100%; /* Full width on mobile */
+    }
+
+    #skill table td {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    #about-me p, #about-me h1 {
+        font-size: 0.9rem; /* Smaller font for mobile */
+    }
+
+    #skill table p, #skill table h1 {
+        font-size: 1rem;
+    }
+
+    #skill table img {
+        height: 4vh; /* Reduce image size on smaller screens */
+    }
+}
+
 
 #projects{
     text-align: center;
