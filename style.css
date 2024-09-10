@@ -5,7 +5,6 @@
 *{
     margin: 0;
     padding: 0px;
-    /* background-color: rgba(241, 171, 206, 0.856); */
 
 }
 
@@ -17,7 +16,7 @@ html{
     scroll-behavior: smooth;
 }
 p{
-    color: grey;
+    color: rgb(105, 102, 102);
 }
 
 a{
@@ -27,7 +26,7 @@ a{
     text-decoration-color: beige;
 }
 .btn{
-    background-color: blueviolet;
+    background-color: rgb(105, 102, 102);
     transition: all 300ms ease;
 }
 
@@ -52,7 +51,7 @@ nav{
 }
 a:hover{
     text-decoration: underline;
-    color: burlywood;
+    color: rgb(105, 102, 102);
     text-underline-offset: 1rem;
 }
 
@@ -185,7 +184,7 @@ a:hover{
 }
 
 .btn-btn-color-2, .btn-btn-color-3:hover{
-    color: gray;
+    color: rgb(105, 102, 102);
 }
 
 #socials img{
@@ -270,12 +269,14 @@ td {
 #skill table {
     margin: 0 auto;
     width: 80%; 
+
 }
 
 #skill table td {
     display: flex;
     text-align: left;
     margin: 0;
+    background-color: rgb(195, 193, 191);
     justify-content: center;
     align-items: center;
     padding-top: 3% ;
@@ -295,12 +296,14 @@ td {
 #skill table p{
     font-size: 20px;
     padding-left: 10px;
-    color: gray;
+    color: black;
     margin: 0;
+    background-color: rgb(195, 193, 191);;
 }
 
 #skill table img{
     height: 5vh;
+    background-color: rgb(195, 193, 191);;
 }
 
 #projects{
@@ -321,6 +324,11 @@ td {
     height: 6vh;
     border-radius: 40%;
     font-size: 18px;
+}
+
+.project-button:hover{
+    transition: all 0.3 ease-in-out;
+    background-color: rgb(105, 102, 102);
 }
 
 #contact p{
