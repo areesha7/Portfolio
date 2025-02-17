@@ -2,14 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;&display=swap');
 
 
-*{
+/* *{
     margin: 0;
     padding: 0px;
     background-color: rgb(158, 158, 158);
-}
+} */
 
 body{
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(158, 158, 158);
     
 }
 
@@ -158,20 +161,27 @@ a:hover{
 .section__text h1{
     font-size: 34px;
 }
+#skills-section{
 
-@media (max-width: 768px) {
-    #profile {
-        flex-direction: column; 
-        text-align: center; 
-    }
-    .section__pic-container {
-        margin-right: 0;
-        margin-bottom: 20px; 
-    }
-    .section__text {
-        max-width: 80%;
-    }
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 2%;
 }
+#skills-section h1{
+    font-size: 50px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+#skill{
+    background-color: white;
+}
+
+
 .btn-container{
     padding-top: 2%;
 }
@@ -193,24 +203,24 @@ a:hover{
     padding-top: 2%;
 }
 #about-me {
-    padding-top: 12vh; /* Use vh for better responsiveness */
+    padding-top: 12vh; 
     padding-bottom: 10px;
 }
 
 #about-me p {
     padding-bottom: 15px;
-    font-size: 1.25rem; /* Use rem for font-size */
+    font-size: 1.25rem; 
     text-align: center;
 }
 
 #about-me h1 {
     padding-bottom: 20px;
-    font-size: 2rem; /* Adjust font size with rem */
+    font-size: 2rem; 
     text-align: center;
 }
 
 #about-section {
-    width: 90%; /* Adjust width for better responsiveness */
+    width: 90%; 
     margin: 0 auto;
     text-align: center;
 }
@@ -224,7 +234,7 @@ table {
 td {
     padding: 20px;
     vertical-align: top;
-    width: 100%; /* Full width on smaller devices */
+    width: 100%; 
 }
 
 #exp_img {
@@ -236,11 +246,11 @@ td {
 }
 
 .exp h1, .edu h1, .lang h1 {
-    font-size: 1.5rem; /* Adjust font size with rem */
+    font-size: 1.5rem; 
 }
 
 .exp p, .edu p, .lang li {
-    font-size: 1rem; /* Adjust font size with rem */
+    font-size: 1rem; 
 }
 
 .lang ul {
@@ -251,7 +261,7 @@ td {
 }
 
 .lang li {
-    font-size: 1rem; /* Adjust font size with rem */
+    font-size: 1rem;
 }
 
 .pp1 {
@@ -260,7 +270,175 @@ td {
     text-align: justify;
 }
 
-#skill {
+
+
+@media only screen and (max-width: 1200px) {
+    #about-section, #skill table {
+        width: 90%;
+    }
+
+    td {
+        width: 45%; 
+    }
+
+    #skill table td {
+        width: 45%;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    #about-section {
+        width: 100%;
+    }
+
+    td {
+        width: 100%; 
+    }
+
+
+    #about-me p, #about-me h1 {
+        font-size: 0.9rem; 
+    }
+
+}
+
+
+#projects{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 24px;
+}
+
+#img1{
+    height: 5vh;
+    padding-right: 2%;
+
+}
+
+#img2{
+    height: 40vh;
+}
+
+#img2:hover{
+    transition: all 0.3 ease-in-out;
+    background-color: rgb(190, 72, 72);
+}
+
+#contact {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+}
+#contact h1{
+    font-size: 80px;
+    font-weight: 1000;
+    
+}
+.email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.email-container img {
+    width: 50px; 
+}
+
+
+.copyright{
+    font-size: 16px;
+    padding-bottom: 3%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .section__text {
+        max-width: 100%;
+    }
+
+    #skills-section {
+        padding: 5%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #ham-nav {
+        display: block;
+    }
+
+    .section__text {
+        padding-top: 10%;
+    }
+
+    #contact {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .section__pic-container img {
+        height: 40vh;
+    }
+
+    .section__text h1 {
+        font-size: 1.5rem;
+    }
+
+    #skills-section h1 {
+        font-size: 1.8rem;
+    }
+
+    #contact {
+        height: auto;
+        padding: 5%;
+    }
+
+    .email-container img {
+        width: 40px;
+    }
+
+    table, td {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* #skill {
     text-align: center;
     align-items: center;
     padding-top: 2%;
@@ -303,30 +481,16 @@ td {
 #skill table img {
     height: 5vh;
     background-color: rgb(195, 193, 191);
-}
+} */
+ 
 
-/* Media Queries for Responsiveness */
-@media only screen and (max-width: 1200px) {
-    #about-section, #skill table {
-        width: 90%;
-    }
-
-    td {
-        width: 45%; /* Adjust width for larger screens */
-    }
-
-    #skill table td {
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     #about-section, #skill table {
         width: 100%;
     }
 
     td {
-        width: 100%; /* Full width on tablets */
+        width: 100%; 
     }
 
     #skill table td {
@@ -335,92 +499,34 @@ td {
     }
 
     #about-me p, #about-me h1 {
-        font-size: 1rem; /* Smaller font for tablets */
+        font-size: 1rem; 
     }
-}
+} */
 
-@media only screen and (max-width: 480px) {
-    #about-section, #skill table {
-        width: 100%;
-    }
-
-    td {
-        width: 100%; /* Full width on mobile */
-    }
-
-    #skill table td {
-        width: 100%;
-        padding-top: 10%;
-    }
-
-    #about-me p, #about-me h1 {
-        font-size: 0.9rem; /* Smaller font for mobile */
-    }
-
-    #skill table p, #skill table h1 {
-        font-size: 1rem;
-    }
-
-    #skill table img {
-        height: 4vh; /* Reduce image size on smaller screens */
-    }
-}
-
-
-#projects{
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 24px;
-}
-
-#projects img{
-    height: 5vh;
-    padding-right: 2%;
-}
-
-.project-button{
+/* .project-button{
     text-align: center;
     width: 10%;
     height: 6vh;
     border-radius: 40%;
     font-size: 18px;
-}
+} */
 
-.project-button:hover{
+
+/* .project-button:hover{
     transition: all 0.3 ease-in-out;
     background-color: rgb(105, 102, 102);
-}
+} */
 
-#contact p{
-    font-size: 24px;
-    padding-bottom: 1.5%;
-}
-
-#contact h1{
-    font-size: 30px;
-    padding-bottom: 1.5%;
-}
-
-.email-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 10px; 
-    padding-bottom: 5%;
-}
-
-.email-container img {
-    height: 4vh;
-    margin-right: 10px; 
-}
-
-.email-container a {
-    font-size: 20px;
-    color: blue; 
-}
-
-.copyright{
-    font-size: 16px;
-    padding-bottom: 3%;
-}
+/* @media (max-width: 768px) {
+    #profile {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .section__pic-container {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+    .section__text {
+        max-width: 80%;
+    }
+} */
